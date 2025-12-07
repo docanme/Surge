@@ -1,16 +1,6 @@
-#!name=Skip Proxy And Real-IP Lists
-#!desc=跳过部分应用的代理检测
-
-[Rule]
-# 屏蔽中国农业银行的网络检查
-DOMAIN,msmp.abchina.com.cn,REJECT
-
-# 使用# 使用 BlackMatrix7 Apple 全量规则（无解析版）
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list,DIRECT
-
-# Apple Maps 特别直连
-DOMAIN,gs-loc.apple.com,DIRECT
-DOMAIN-KEYWORD,apple-mapkit,DIRECT
+#!name=自用模块
+#!desc=跳过App的代理检测、Apple服务直连
+#！author=DOC
 
 [General]
 skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
@@ -27,3 +17,16 @@ always-real-ip = %APPEND% easy-login.10099.com.cn,*-update.xoyocdn.com,id6.me,op
 # easy-login.10099.com.cn 中国广电
 # *-update.xoyocdn.com 剑网三无界
 # id6.me 中国电信一键登陆
+
+[Rule]
+# 屏蔽中国农业银行的网络检查
+DOMAIN,msmp.abchina.com.cn,REJECT
+
+# 使用# 使用 BlackMatrix7 Apple 全量规则（无解析版）
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list,DIRECT
+
+# Apple Maps 特别直连
+DOMAIN,gs-loc.apple.com,DIRECT
+DOMAIN-KEYWORD,apple-mapkit,DIRECT
+
+
