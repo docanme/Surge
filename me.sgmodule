@@ -2,7 +2,15 @@
 #!desc=跳过部分应用的代理检测
 
 [Rule]
+# 屏蔽中国农业银行的网络检查
 DOMAIN,msmp.abchina.com.cn,REJECT
+
+# 使用# 使用 BlackMatrix7 Apple 全量规则（无解析版）
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list,DIRECT
+
+# Apple Maps 特别直连
+DOMAIN,gs-loc.apple.com,DIRECT
+DOMAIN-KEYWORD,apple-mapkit,DIRECT
 
 [General]
 skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
