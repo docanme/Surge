@@ -22,7 +22,7 @@ always-real-ip = %APPEND% easy-login.10099.com.cn,*-update.xoyocdn.com,id6.me,op
 DOMAIN,msmp.abchina.com.cn,REJECT
 
 # 使用 BlackMatrix7 Apple 全量规则（无解析版）
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list,DIRECT
+# RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list,DIRECT
 
 # Apple Maps 特别直连
 DOMAIN,gs-loc.apple.com,DIRECT
