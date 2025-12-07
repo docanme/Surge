@@ -1,5 +1,5 @@
-#!name = 自用模块
-#!desc = 跳过App的代理检测、Apple服务直连
+#!name=自用模块
+#!desc=跳过App的代理检测、Apple服务直连
 
 [General]
 skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
