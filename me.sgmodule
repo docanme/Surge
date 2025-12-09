@@ -25,8 +25,17 @@ DOMAIN,msmp.abchina.com.cn,REJECT
 # 使用 BlackMatrix7 Apple 全量规则（无解析版）
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list,DIRECT
 
+# 外国代理（Proxy）
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy_All_No_Resolve.list,Proxy,extended-matching
+
+# 中国直连（direct）
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax_All.list,DIRECT,extended-matching
+
 # Apple Maps 特别直连
 DOMAIN,gs-loc.apple.com,DIRECT
 DOMAIN-KEYWORD,apple-mapkit,DIRECT
+
+# 局域网地址
+RULE-SET,LAN,DIRECT
 
 
